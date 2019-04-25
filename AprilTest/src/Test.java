@@ -14,15 +14,12 @@ class Test {
 		String[] ten = { " ", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety",
 				"twenty" };
 		Map<Integer, String> unitMaps = new HashMap<Integer, String>();
-		for (int i = 0; i < unit.length; i++) {
-
-			unitMaps.put(i, unit[i]);
-		}
 		Map<Integer, String> TenthMaps = new HashMap<Integer, String>();
-		for (int i = 0; i < ten.length; i++) {
+		for (int i = 0; i < unit.length; i++) {
+			unitMaps.put(i, unit[i]);
 			TenthMaps.put(i, ten[i]);
 		}
-
+		
 		String countNum = String.valueOf(num);
 		int unitDigit = 0;
 		int tenthDigit = 0;
