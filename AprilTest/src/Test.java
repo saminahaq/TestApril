@@ -9,13 +9,13 @@ class Test {
 	}
 
 	public static StringBuffer numToWordParser(int num) {
-		StringBuffer result = new StringBuffer(110);
+		StringBuffer result = new StringBuffer(11);
 		String[] unit = { " ", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
 		String[] ten = { " ", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety",
 				"twenty" };
 		Map<Integer, String> unitMaps = new HashMap<Integer, String>();
 		Map<Integer, String> TenthMaps = new HashMap<Integer, String>();
-		for (int i = 0; i < unit.length; i++) {
+		for (int i = 0; i < ten.length; i++) {
 			unitMaps.put(i, unit[i]);
 			TenthMaps.put(i, ten[i]);
 		}
